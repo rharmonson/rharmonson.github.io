@@ -5,9 +5,25 @@
         <description>Richard's Technology Guides website provides documentation on a myriad of technology subjects for both novice and advance audiences.</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 06 Aug 2017 12:52:47 -0700</pubDate>
-        <lastBuildDate>Sun, 06 Aug 2017 12:52:47 -0700</lastBuildDate>
+        <pubDate>Sun, 06 Aug 2017 13:20:55 -0700</pubDate>
+        <lastBuildDate>Sun, 06 Aug 2017 13:20:55 -0700</lastBuildDate>
         <generator>Jekyll v3.3.1</generator>
+        
+        <item>
+            <title>Comment Test</title>
+            <description>&lt;p&gt;Comment Test body text here.&lt;/p&gt;
+
+&lt;p&gt;x&lt;/p&gt;
+
+</description>
+            <pubDate>Sun, 06 Aug 2017 00:00:00 -0700</pubDate>
+            <link>http://localhost:4000/CommentTest.html</link>
+            <guid isPermaLink="true">http://localhost:4000/CommentTest.html</guid>
+            
+            <category>news</category>
+            
+            
+        </item>
         
         <item>
             <title>Welcome!</title>

@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/CommentTest.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/welcome.html</loc>
   </url>
   

@@ -77,6 +77,16 @@
 
 
 {
+"title": "Comment Test",
+"tags": "news",
+"keywords": "",
+"url": "CommentTest.html",
+"summary": "Post to develop Github comments."
+}
+,
+
+
+{
 "title": "Welcome!",
 "tags": "news",
 "keywords": "",
