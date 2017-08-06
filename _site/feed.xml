@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title></title>
+        <description>Technology documentation regarding a myriad of subjects for both novice and advance audiences.</description>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sat, 05 Aug 2017 20:34:19 -0700</pubDate>
+        <lastBuildDate>Sat, 05 Aug 2017 20:34:19 -0700</lastBuildDate>
+        <generator>Jekyll v3.3.1</generator>
+        
+        <item>
+            <title>Welcome!</title>
+            <description>&lt;p&gt;Welcome to RichTech where I blog my adventures in technology and post guides, howtos, and musings.&lt;/p&gt;
+
+&lt;p&gt;Topics include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Linux&lt;/li&gt;
+  &lt;li&gt;Computer Hardware&lt;/li&gt;
+  &lt;li&gt;Security&lt;/li&gt;
+  &lt;li&gt;Anything else that I find of interest&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Looking for RichTech Wiki?&lt;/p&gt;
+
+&lt;p&gt;The RichTech Wiki on Github is very much still intact and continues to garner a great deal of interest. Major revision of its Guides will be posted here at Github.io not on Github.com. All new guides will be posted here.&lt;/p&gt;
+
+</description>
+            <pubDate>Sat, 05 Aug 2017 00:00:00 -0700</pubDate>
+            <link>http://localhost:4000/welcome.html</link>
+            <guid isPermaLink="true">http://localhost:4000/welcome.html</guid>
+            
+            <category>news</category>
+            
+            
+        </item>
+        
+    </channel>
+</rss>
