@@ -5,26 +5,17 @@
         <description>Richard's Technology Guides website provides documentation on a myriad of technology subjects for both novice and advance audiences.</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 06 Aug 2017 07:18:40 -0700</pubDate>
-        <lastBuildDate>Sun, 06 Aug 2017 07:18:40 -0700</lastBuildDate>
+        <pubDate>Sun, 06 Aug 2017 07:56:48 -0700</pubDate>
+        <lastBuildDate>Sun, 06 Aug 2017 07:56:48 -0700</lastBuildDate>
         <generator>Jekyll v3.3.1</generator>
         
         <item>
             <title>Welcome!</title>
-            <description>&lt;p&gt;Welcome to RichTech where I blog my adventures in technology and post guides, howtos, and musings.&lt;/p&gt;
-
-&lt;p&gt;Topics include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Linux&lt;/li&gt;
-  &lt;li&gt;Computer Hardware&lt;/li&gt;
-  &lt;li&gt;Security&lt;/li&gt;
-  &lt;li&gt;Anything else that I find of interest&lt;/li&gt;
-&lt;/ul&gt;
+            <description>&lt;p&gt;Welcome to Richard’s Technology Guides where I share my adventure in technology through guides and news (blog).&lt;/p&gt;
 
 &lt;p&gt;Looking for RichTech Wiki?&lt;/p&gt;
 
-&lt;p&gt;The RichTech Wiki on Github is very much still intact and continues to garner a great deal of interest. Major revision of its Guides will be posted here at Github.io not on Github.com. All new guides will be posted here.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/rharmonson/richtech/wiki&quot;&gt;RichTech Wiki&lt;/a&gt; on Github is very much still intact and continues to garner a great deal of interest. Major revisions of its guides will be posted here at Github.io not on Github.com. All new guides will be posted here.&lt;/p&gt;
 
 </description>
             <pubDate>Sat, 05 Aug 2017 00:00:00 -0700</pubDate>

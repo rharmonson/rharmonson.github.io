@@ -6,11 +6,11 @@
 
 
 {
-"title": "RichTech Technology Guides",
+"title": "RichTech Guides",
 "tags": "home",
 "keywords": "sample homepage",
 "url": "index.html",
-"summary": "This is the index page."
+"summary": "Welcome to RichTech Guides."
 }
 ,
 
@@ -81,7 +81,7 @@
 "tags": "news",
 "keywords": "",
 "url": "welcome.html",
-"summary": "Initial post for new RichTech Techology Guides website."
+"summary": "Initial post for new RichTech Guides website."
 }
 
 
