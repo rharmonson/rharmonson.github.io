@@ -3,10 +3,10 @@ repository: rharmonson/rharmonson.github.io
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: RichTech Technology Guides
+topnav_title: RichTech Guides
 # this appears on the top navigation bar next to the home button
 
-site_title: RichTech Technology Guides
+site_title: RichTech Guides
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: R.Harmonson
@@ -107,7 +107,7 @@ sidebars:
 - product2_sidebar
 - other
 
-description: "Technology documentation regarding a myriad of subjects for both novice and advance audiences."
+description: "Richard's Technology Guides website provides documentation on a myriad of technology subjects for both novice and advance audiences."
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
