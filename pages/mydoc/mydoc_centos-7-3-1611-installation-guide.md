@@ -5,60 +5,17 @@ last_updated: July 30, 2017
 keywords: linux centos system administration firewalld NetworkManager iptables cloud-init spacewalk ovirt epel
 summary: "The purpose of this guide is provide the steps to install and configure a standardized CentOS 7.3.1611 (aka RHEL) x86_64 base operating system."
 sidebar:
-permalink: mydoc_centos731611installguide.html
+permalink: mydoc_centos7installguide.html
 folder: mydoc
 ---
 
-# CentOS 7.3.1611 Minimal x86_64 Base Installation Guide
-
-***
-
-Revision July 30, 2017; corrected typo in sealvm.sh as reported by a-roussos. Thank you!
-
-Revision March 13, 2017; change ifcfg from PREFIX to NETMASK to support cloud-init
-
-Revision March 9, 2017; Small tweak of "Disable IPv6"
-
-Published February 19, 2017
-
-***
+# CentOS 7.3.1611 x86_64 Installation Guide
 
 The purpose of this guide is provide the steps to install and configure a standardized CentOS 7.3.1611 (aka RHEL) x86_64 base operating system. In addition, several optional sections prepare the installation for use with virtualization platforms.
 
 Current CentOS-7 Release Notes can be found at https://wiki.centos.org/Manuals/ReleaseNotes/CentOS7.
 
 CentOS FAQ can be found at http://wiki.centos.org/FAQ/CentOS7.
-
-**Base CentOS Installation Task Overview**
-
-1. [Obtain Media](#obtain-media)
-1. [Install](#install)
-1. [Host Name](#host-name)
-1. [Network](#network)
-1. [Disable IPv6](#disable-ipv6)
-1. [NOZEROCONF](#nozeroconf)
-1. [Name Resolution](#name-resolution)
-1. [firewalld & iptables](#firewalld--iptables)
-1. [Firewall Policies](#firewall-policies)
-1. [SELinux](#selinux)
-1. [Time Zone](#time-zone)
-1. [Time & Date](#time--date)
-1. [Network Time](#network-time)
-1. [EPEL (optional)](#epel-optional)
-1. [oVirt 4 Guest (optional)](#ovirt-4-guest-optional)
-1. [CloudInit (optional)](#cloudinit-optional)
-1. [Spacewalk 2.6 Client (optional)](#spacewalk-26-client-optional)
-1. [Update](#update)
-1. [VM Template](#vm-template)
-1. [Done?!](#done)
-
-***
-
-**NOTE**
-
-The "Minimal" in the article title was originally in reference to the Minimal installation media. However, this guide is applicable to any CentOS 7 1611 media installation and not limited to the "Minimal" installation media.
-
-***
 
 ## Obtain Media
 
