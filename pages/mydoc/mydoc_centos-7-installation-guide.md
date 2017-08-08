@@ -1,5 +1,5 @@
 ---
-title: CentOS 7.3.1611 Installation Guide
+title: CentOS 7 Installation Guide
 tags: [linux centos sysadmin virtualization]
 last_updated: July 30, 2017
 keywords: linux centos system administration firewalld NetworkManager iptables cloud-init spacewalk ovirt epel
@@ -9,7 +9,7 @@ permalink: mydoc_centos7installguide.html
 folder: mydoc
 ---
 
-# CentOS 7.3.1611 x86_64 Installation Guide
+# CentOS 7 Installation Guide
 
 The purpose of this guide is provide the steps to install and configure a standardized CentOS 7.3.1611 (aka RHEL) x86_64 base operating system. In addition, several optional sections prepare the installation for use with virtualization platforms.
 
