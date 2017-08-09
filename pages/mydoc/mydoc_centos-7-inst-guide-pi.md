@@ -15,7 +15,7 @@ folder: mydoc
 
 ## Purpose
 
-The purpose of this article is to describe how to install CentOS 7on the Raspberry PI 3 B for use as a starting point to install light-weight services such as DNS, NTP, DHCP, Apache, etc. This guide has been tested successfully using CentOS 7.2.1511 and 7.3.1611.
+The purpose of this article is to describe how to install CentOS 7 on the Raspberry PI 3 B for use as a starting point to install light-weight services such as DNS, NTP, DHCP, Apache, etc. This guide has been tested successfully using CentOS 7.2.1511 and 7.3.1611.
 
 ## Raspberry PI 3
 
@@ -44,7 +44,7 @@ PI3 Specifications
 
 https://wiki.centos.org/SpecialInterestGroup/AltArch/Arm32/RaspberryPi3
 
-{% include tip.html content="Root Password</br>
+{% include tip.html content="Root Password<br/>
 The default root password is <b>centos</b>."
 %}
 
@@ -170,19 +170,19 @@ The filesystem on /dev/mmcblk0p3 is now 15422208 blocks long.
 
 Immediately after installation, execute `systemctl` and note the two failing services network and kdump. To fix, I did the following:
 
-**network.service**
+### network.service
 
 Executing `systemctl start network` resulted with an error like "Failed to start LSB: Bring up/down networking." Not terribly helpful. The solution was pretty simple, however. Execute `echo "NETWORKING=yes" > /etc/sysconfig/network` for the "network" file is absent.
 
-**kdump.service**
+### kdump.service
 
 Executing `systemctl start kdump` then `journalctl -xe` shows the message "Kdump not supported on this kernel." Disable the service by executing `systemctl disable kdump`.
 
-**systemd-tmpfiles-setup.service**
+### systemd-tmpfiles-setup.service
 
 Periodically, I saw an error with systemd-tmpfiles-setup.service. It would come and go, so I ignored it. Further research is needed.
 
-**Disable Wifi/BT**
+### Disable Wifi/BT
 
 I have no use for the wireless adapter nor bluetooth. Disabling the devices will increase security and reduce electrical / heat.
 
