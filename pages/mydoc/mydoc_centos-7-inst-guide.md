@@ -139,7 +139,7 @@ Is this ok [y/N]:
 
 By default, the CentOS installation will have created ifcfg files for detected interfaces. Backup the original files with the exception of `ifcfg-lo` which will remain unmodified. Note that all files starting with "ifcfg" within network-scripts will be processed at start of the network service unless appending `.orig`. When backing up the files, either place in a different directory or append `.orig`.
 
-**View Interfaces**
+#### View Interfaces
 
 Connect the interface to be configured and use `ip addr` identify the 'up' interface if using more than one interface.
 
@@ -163,7 +163,7 @@ For example with DHCP
 
 Note interface eth0 is in an `UP` state. This is the interface to be configured. The example only has one interface, however, additional interfaces without a network cable would not show an "UP" state.
 
-**Configure Interface**
+#### Configure Interface
 
 Create or edit a configuration file using `vi /etc/sysconfig/network-scripts/ifcfg-eth0` and replace the values given in the example below with yours; IPADDR, NETMASK, and GATEWAY. The entry "DEFROUTE=yes" assumes the interface is to be the default route for unknown routes. All other interfaces should have "DEFROUTE=no." You may find many more values within the original ifcfg files for use with NetworkManager. If not using NetworkManager, these can be safely removed.
 
@@ -1024,3 +1024,4 @@ Total download size: 441 k
 Installed size: 1.1 M
 Is this ok [y/d/N]:
 ```
+{% include links.html %}
