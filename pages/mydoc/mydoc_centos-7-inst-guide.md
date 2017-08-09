@@ -30,11 +30,11 @@ The NetInstall ISO installer has only the necessary bits to boot a very basic op
 
 For example:
 
-`http://mirrors.ocf.berkeley.edu/centos/7/isos/x86_64/CentOS-7-x86_64-NetInstall-1611.iso`
+    http://mirrors.ocf.berkeley.edu/centos/7/isos/x86_64/CentOS-7-x86_64-NetInstall-1611.iso
 
 During the install, you will need to provide a repository URL such as:
 
-`http://mirrors.ocf.berkeley.edu/centos/7/os/x86_64/`
+    http://mirrors.ocf.berkeley.edu/centos/7/os/x86_64/
 
 For the Minimal installation media, click the Minimal link.
 
@@ -64,7 +64,6 @@ Set the hostname
 
 ```
 [root@localhost ~]# hostnamectl set-hostname myhost.mydomain.net
-
 ```
 
 Results
@@ -84,6 +83,7 @@ Results
 ```
 
 ## Network
+
 ### Network Manager
 
 Red Hat has been changing how networking is configured and managed with an emphasis on the use of Network Manager. Network Manager is installed and in use by default on CentOS 7. Configure using either `nmtui` or `nmcli`. `nmtui` has a very intuitive interface but `nmcli` is useful for scripting.
@@ -200,17 +200,13 @@ Results
        valid_lft forever preferred_lft forever
 ```
 
-***
-
-**Notes**
-
-1. `NM_MANAGED=no` disables Network Manager for an interface, if using Network Manager
-1. `IPV6INIT=no` disables IPv6 for an interface
-1. `DEFROUTE=no` or `DEFROUTE=yes` excludes or sets an interface as the default route, respectively, if using Network Manager
-1. `PEERDNS=yes` adds the interface's DNS settings to the `/etc/resolv.conf`
-1. `PREFIX` is an alternative to `NETMASK`
-
-***
+{% include note.html content="Additional Values<br/>
+1. `NM_MANAGED=no` disables Network Manager for an interface, if using Network Manager<br/>
+2. `IPV6INIT=no` disables IPv6 for an interface<br/>
+3. `DEFROUTE=no` or `DEFROUTE=yes` excludes or sets an interface as the default route, respectively, if using Network Manager<br/>
+4. `PEERDNS=yes` adds the interface's DNS settings to the `/etc/resolv.conf`<br/>
+5. `PREFIX` is an alternative to `NETMASK`"
+%}
 
 Additional interfaces if needed have a much simpler configuration.
 
@@ -295,22 +291,21 @@ Using `ip addr` note there is no IPv6 address associated with eth0.
 
 ```
 
-***
-
-**Disable IPv6 Everywhere**
-
-To disable the use of IPv6 for everything on the Linux host, enable "all" and "default" within sysctl.conf to ensure no interfaces uses IPv6.
+{% include tip.html content="Disable IPv6 Everywhere<br/>
+To disable the use of IPv6 for everything on the Linux host, enable all and default within sysctl.conf to ensure no interfaces uses IPv6.<br/>
+<br/>
+net.ipv6.conf.all.disable_ipv6=1<br/>
+net.ipv6.conf.default.disable_ipv6=1"
+%}
 
 ```
-[root@myhost ~]# vi /etc/sysctl.conf
+[root@myhost ~]# vi /etc/sysctl.conf```
 # System default settings live in /usr/lib/sysctl.d/00-system.conf.
 # To override those settings, enter new settings here, or in an /etc/sysctl.d/<name>.conf file
 #
 # For more information, see sysctl.conf(5) and sysctl.d(5).
-net.ipv6.conf.all.disable_ipv6=1
-net.ipv6.conf.default.disable_ipv6=1
+
 ```
-***
 
 ### NOZEROCONF
 
@@ -422,13 +417,9 @@ Feb 18 15:12:52 myhost.mydomain.net systemd[1]: Started IPv4 firewall with ...
 Hint: Some lines were ellipsized, use -l to show in full.
 ```
 
-***
-
-**Note**
-
-If you receive error "Failed to execute operation: Access denied" when using systemctl to disable firewalld, you may have disabled "Security Policy" during the graphical install which resulted it in not being installed.
-
-***
+{% include warning.html content="<br/>
+If you receive error <i>Failed to execute operation: Access denied</i> when using systemctl to disable firewalld, you may have disabled the option <b>Security Policy</b> during the graphical install which results with it not being installed."
+%}
 
 ## Firewall Policies
 
