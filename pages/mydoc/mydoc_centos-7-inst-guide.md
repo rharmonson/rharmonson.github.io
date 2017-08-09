@@ -5,7 +5,7 @@ last_updated: July 30, 2017
 keywords: linux centos system administration firewalld NetworkManager iptables cloud-init spacewalk ovirt epel
 summary: "The purpose of this guide is provide the steps to install and configure a standardized CentOS 7.3.1611 (aka RHEL) x86_64 base operating system."
 sidebar:
-permalink: mydoc_centos7installguide.html
+permalink: cos7inst.html
 folder: mydoc
 ---
 
