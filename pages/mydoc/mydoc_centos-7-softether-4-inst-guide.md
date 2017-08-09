@@ -7,7 +7,7 @@ summary: "The purpose of this article is to describe how to SoftEther VPN Server
 layout: default_toc
 sidebar:
 toc: false
-permalink: cos7se4inst.html
+permalink: se4instcos7.html
 folder: mydoc
 ---
 
