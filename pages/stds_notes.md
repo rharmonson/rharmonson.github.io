@@ -1,26 +1,35 @@
 Header for pages:
 ---
 title: Article Title
+published: true
+audience:
+tags: [linux centos sysadmin]
 keywords: linux centos system administration
 last_updated: April 2, 2017
-tags: [linux centos sysadmin]
+datatable:
 summary: "The purpose of this article is to describe ."
-layout: default_toc
+series:
+weight:
 sidebar:
 permalink: filename.html
 folder: mydoc
 toc: false
-published: true
+layout: default_toc
+CommentIssueId:
 ---
 
 Header for posts:
 ---
-title: News Title
-keywords: news, blog, updates, release notes, announcements
-sidebar: mydoc_sidebar
-permalink: news_archive.html
-folder:
+title: Article Title
+published: true
+tags: [linux centos sysadmin]
+keywords: linux centos system administration
+summary: "The purpose of this article is to describe ."
+permalink: filename.html
+folder: mydoc
 toc: false
+layout: default_toc
+CommentIssueId:
 ---
 
 Difference between keywords and tags?
