@@ -1,7 +1,6 @@
 ---
 title: RichTech Guides
 keywords: sample homepage
-tags: [home]
 sidebar: home_sidebar
 permalink: index.html
 summary: Welcome to RichTech Guides.

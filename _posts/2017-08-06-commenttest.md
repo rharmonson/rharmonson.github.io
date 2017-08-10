@@ -3,7 +3,7 @@ title: "Comment Test"
 published: true
 permalink: CommentTest.html
 summary: "Post to develop Github comments."
-tags: [news]
+tags: [news fedora]
 commentIssueId: 1
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: SoftEther 4 Installation Guide on CentOS 7
-tags: [linux centos sysadmin security]
+tags: [linux centos security service sysadmin]
 last_updated: September 14, 2016
 keywords: linux centos system administration remote access vpn softether
 summary: "The purpose of this article is to describe how to SoftEther VPN Server and Client on CentOS 7."

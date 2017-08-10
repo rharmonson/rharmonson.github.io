@@ -1,8 +1,8 @@
 ---
-title: "Services pages"
-tagName: services
+title: "Service pages"
+tagName: service
 search: exclude
-permalink: tag_services.html
+permalink: tag_service.html
 sidebar:
 folder: tags
 ---
