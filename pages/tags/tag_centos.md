@@ -1,9 +1,9 @@
 ---
-title: "Mobile Pages"
+title: "CentOS pages"
+tagName: centos
 search: exclude
-tagName: mobile
-permalink: tag_mobile.html
-sidebar: mydoc_sidebar
+permalink: tag_centos.html
+sidebar:
 folder: tags
 ---
 {% include taglogic.html %}
