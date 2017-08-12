@@ -17,7 +17,7 @@
 <div id="comments">
   <h2>Comments</h2>
   <div id="header">
-    Leave general comments using <a href="https://github.com/rharmonson/rharmonson.github.io/issues/{{page.commentIssueId}}"> GitHub Issues</a>, but please select "Edit me" at top for content changes.
+    Leave general comments using <a href="https://github.com/rharmonson/rharmonson.github.io/issues/{{page.commentIssueId}}"> GitHub Issues</a>, but use the "Edit me" at top for content changes.
 </div>
 </div>
 
@@ -30,7 +30,7 @@
       var cbody = data[i].body_html;
       var cavatarlink = data[i].user.avatar_url + "&s=20";
       var cdate = Date.parse(data[i].created_at).toString("yyyy-MM-dd HH:mm:ss");
-      $("#comments").append("<div class='comment'><div class='commentheader'><div class='commentgravatar'>" + '<img src="' + cavatarlink + '" alt="" width="20" height="20">' + "</div><a class='commentuser' href=\""+ cuserlink + "\">" + cuser + "</a><a class='commentdate' href=\"" + clink + "\">" + cdate + "</a></div><div class='commentbody'>" + cbody + "</div></div>");
+      $("#comments").append("<div class='comment'><div class='commentheader'><div class='commentgravatar'>" + '<img src="' + cavatarlink + "</div><a class='commentuser' href=\""+ cuserlink + "\">" + cuser + "</a><a class='commentdate' href=\"" + clink + "\">" + cdate + "</a></div><div class='commentbody'>" + cbody + "</div></div>");
     }
   }
   $.ajax("https://api.github.com/repos/rharmonson/rharmonson.github.io/issues/{{page.commentIssueId}}/comments?per_page=100", {
