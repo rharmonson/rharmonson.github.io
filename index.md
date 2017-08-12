@@ -6,7 +6,9 @@ permalink: index.html
 summary: Welcome to RichTech Guides.
 ---
 
-Welcome to Richard's Technology Guides aka RichTech Guides. The website primarily consists of installation guides for open source operating systems and software with the occasional news post.
+## Welcome!
+
+Welcome to Richard's Technology (RichTech) Guides. The website primarily consists of installation guides and news posts on open source operating systems and software.
 
 Topics include:
 
@@ -17,8 +19,8 @@ Topics include:
 - Storage
 - Virtualization
 
-Looking for RichTech Wiki?
+## RichTech Wiki?
 
-The [RichTech Wiki](https://github.com/rharmonson/richtech/wiki) on github.com is very much still intact and continues to garner a great deal of interest. However, I will no longer maintaining documents on the Wiki. I will migrate the higher traffic documentation from the RichTech Wiki and all revisions to github.io (here).
+Are you looking for the RichTech Wiki? The [RichTech Wiki](https://github.com/rharmonson/richtech/wiki) on github.com is intact and will continue to be available. However, the Wiki articles will no longer be maintained. I will migrate the higher traffic articles and revisions from the RichTech Wiki to here.
 
 {% include links.html %}
