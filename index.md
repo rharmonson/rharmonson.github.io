@@ -1,9 +1,9 @@
 ---
-title: RichTech Guides
+title: Richard's Technology Guides
 keywords: sample homepage
 sidebar: home_sidebar
 permalink: index.html
-summary: Welcome to RichTech Guides.
+toc: false
 ---
 
 ## Welcome!
