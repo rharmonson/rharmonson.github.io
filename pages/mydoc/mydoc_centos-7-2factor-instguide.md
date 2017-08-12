@@ -8,7 +8,6 @@ summary: "The purpose of this article is to article is to provide a *free* two-f
 permalink: 2factorcos7.html
 folder: mydoc
 toc: false
-layout: default_toc
 CommentIssueId:
 ---
 

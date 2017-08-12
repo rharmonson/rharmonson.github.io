@@ -6,9 +6,9 @@ keywords: firewalld NetworkManager iptables raspberry
 last_updated: April 2, 2017
 summary: "The purpose of this article is to describe how to install CentOS 7 on the Raspberry PI 3 B."
 sidebar:
-toc: true
 permalink: cos7instpi.html
 folder: mydoc
+toc: true
 commentIssueId: 1
 ---
 

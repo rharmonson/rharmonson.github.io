@@ -45,6 +45,35 @@
   width: 100%;
 }
 
+.comment .commentheader .commentgravatar {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: white;
+  background-image: none;
+  background-origin: padding-box;
+  color: black;
+  display: inline-block;
+  float: none;
+  font-family: helvetica, arial, freesans, clean, sans-serif;
+  font-size: 1px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  height: 20px;
+  line-height: 1px;
+  margin-left: 5px;
+  margin-right: 3px;
+  margin-top: -2px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 1px;
+  text-overflow: clip;
+  text-shadow: rgba(255, 255, 255, 0.699219) 1px 1px 0px;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 20px;
+}
+
 .comment .commentheader a:link {
   text-decoration: none;
 }
