@@ -6,7 +6,7 @@ keywords: authentication radius sssd
 last_updated: July 1, 2016
 summary: "The purpose of this article is to article is to provide a *free* two-factor authentication solution for use with VPN solutions."
 permalink: 2factorcos7.html
-folder: mydoc
+folder: 2017
 toc: false
 CommentIssueId: 6
 ---
