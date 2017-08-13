@@ -2,7 +2,7 @@
 title: Article Title
 published: false
 audience:
-tags: [centos fedora  hardware linux security service sysadmin virtualization windows]
+tags: [centos, fedora, hardware, linux, programming, security, service, sysadmin, virtualization, windows]
 keywords:
 last_updated: August 1, 2017
 datatable:

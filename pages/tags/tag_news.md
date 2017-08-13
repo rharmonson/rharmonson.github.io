@@ -3,7 +3,7 @@ title: "News"
 tagName: news
 search: exclude
 permalink: tag_news.html
-sidebar: mydoc_sidebar
+sidebar:
 folder: tags
 toc: false
 ---

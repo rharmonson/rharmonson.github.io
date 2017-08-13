@@ -1,7 +1,7 @@
 ---
 title: Two Factor Authentication using Google Authenticator on CentOS 7
 published: true
-tags: [linux centos service sysadmin security]
+tags: [linux, centos, service, sysadmin, security]
 keywords: authentication radius sssd
 last_updated: July 1, 2016
 summary: "The purpose of this article is to article is to provide a *free* two-factor authentication solution for use with VPN solutions."
