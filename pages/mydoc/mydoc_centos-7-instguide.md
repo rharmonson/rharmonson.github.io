@@ -9,6 +9,7 @@ sidebar:
 permalink: cos7inst.html
 folder: mydoc
 toc: false
+commentIssueId: 3
 ---
 
 # CentOS 7 Installation Guide

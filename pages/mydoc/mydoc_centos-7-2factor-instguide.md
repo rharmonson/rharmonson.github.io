@@ -8,7 +8,7 @@ summary: "The purpose of this article is to article is to provide a *free* two-f
 permalink: 2factorcos7.html
 folder: mydoc
 toc: false
-CommentIssueId:
+CommentIssueId: 6
 ---
 
 # CentOS 7 Minimal: Two-factor Authentication using FreeRADIUS 3, SSSD 1.12, & Google Authenticator

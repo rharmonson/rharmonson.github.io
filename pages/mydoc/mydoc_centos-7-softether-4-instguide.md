@@ -9,6 +9,7 @@ sidebar:
 permalink: se4instcos7.html
 folder: mydoc
 toc: false
+commentIssueId: 5
 ---
 
 # SoftEther 4 Installation Guide on CentOS 7

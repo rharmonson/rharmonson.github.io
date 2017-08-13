@@ -1,7 +1,7 @@
 ---
 title: Article Title
 published: false
-tags: [centos fedora  hardware linux security service sysadmin virtualization windows]
+tags: [news centos fedora  hardware linux security service sysadmin virtualization windows]
 keywords:
 summary: "The purpose of this article is to describe."
 permalink: filename.html

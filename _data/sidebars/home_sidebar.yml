@@ -8,8 +8,11 @@ entries:
   - title: News
     output: web
     folderitems:
-    - title: Current News
+    - title: News
       url: /news.html
+      output: web
+    - title: Archive News
+      url: /news_archive.html
       output: web
 
   - title: Hardware

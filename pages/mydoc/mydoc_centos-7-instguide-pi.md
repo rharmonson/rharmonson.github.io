@@ -8,8 +8,8 @@ summary: "The purpose of this article is to describe how to install CentOS 7 on 
 sidebar:
 permalink: cos7instpi.html
 folder: mydoc
-toc: true
-commentIssueId: 1
+toc: false
+commentIssueId: 4
 ---
 
 # CentOS 7 Installation Guide on the Raspberry PI 3
