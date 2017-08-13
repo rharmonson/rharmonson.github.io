@@ -1,11 +1,15 @@
 ---
 title: Richard's Technology Guides
-keywords: sample homepage
+keywords: home homepage index
 sidebar: home_sidebar
 permalink: index.html
 toc: false
 commentIssueId: 1
 ---
+
+## Under Construction!
+
+`I am in the process of migrating and revising content from RichTech Wiki and developing new content and tweaking the website to my liking. Please check back!`
 
 ## Welcome!
 
