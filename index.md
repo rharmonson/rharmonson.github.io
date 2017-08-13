@@ -4,6 +4,7 @@ keywords: sample homepage
 sidebar: home_sidebar
 permalink: index.html
 toc: false
+CommentIssueId: 1
 ---
 
 ## Welcome!
