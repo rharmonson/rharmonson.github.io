@@ -7,8 +7,8 @@ last_updated: September 14, 2016
 summary: "The purpose of this article is to describe how to SoftEther VPN Server and Client on CentOS 7."
 sidebar:
 permalink: se4instcos7.html
-folder: mydoc
-toc: false
+folder: 2017
+toc: 
 commentIssueId: 5
 ---
 

@@ -7,8 +7,8 @@ last_updated: July 30, 2017
 summary: "The purpose of this guide is provide the steps to install and configure a standardized CentOS 7.3.1611 (aka RHEL) x86_64 base operating system."
 sidebar:
 permalink: cos7inst.html
-folder: mydoc
-toc: false
+folder: 2017
+toc: 
 commentIssueId: 3
 ---
 
