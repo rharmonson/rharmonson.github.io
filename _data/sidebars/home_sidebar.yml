@@ -18,7 +18,7 @@ entries:
   - title: Hardware
     output: web
     folderitems:
-    - title: Raspberry PI 3 on CentOS
+    - title: Raspberry PI 3 & CentOS 7
       url: /cos7instpi.html
       output: web
 

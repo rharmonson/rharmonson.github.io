@@ -5,9 +5,10 @@ tags: [linux, centos, service, sysadmin, security]
 keywords: authentication radius sssd
 last_updated: July 1, 2016
 summary: "The purpose of this article is to article is to provide a *free* two-factor authentication solution for use with VPN solutions."
+sidebar:
 permalink: 2factorcos7.html
 folder: 2017
-toc: 
+toc:
 CommentIssueId: 6
 ---
 

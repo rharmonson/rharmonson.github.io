@@ -8,7 +8,7 @@ summary: "The purpose of this guide is provide the steps to install and configur
 sidebar:
 permalink: cos7inst.html
 folder: 2017
-toc: 
+toc:
 commentIssueId: 3
 ---
 
