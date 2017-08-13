@@ -9,7 +9,7 @@ sidebar:
 permalink: 2factorcos7.html
 folder: 2017
 toc:
-CommentIssueId: 6
+commentIssueId: 6
 ---
 
 # CentOS 7 Minimal: Two-factor Authentication using FreeRADIUS 3, SSSD 1.12, & Google Authenticator
