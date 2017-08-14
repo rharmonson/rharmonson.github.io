@@ -47,7 +47,7 @@ entries:
   - title: Programming
     output: web
     folderitems:
-    - title: Post with tag Programming
+    - title: Posts with tag Programming
       url: /tag_programming.html
       output: web
 
