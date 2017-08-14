@@ -18,23 +18,76 @@ entries:
   - title: Hardware
     output: web
     folderitems:
-    - title: Raspberry PI 3 & CentOS 7
-      url: /cos7instpi.html
+    - title: Tag: Hardware
+      url: /tag_hardware.html
       output: web
 
   - title: Operating System
     output: web
     folderitems:
-    - title: CentOS 7
+    - title: Tag: CentOS
+      url: /tag_centos.html
+      output: web
+    - title: Tag: Fedora
+      url: /tag_fedora.html
+      output: web
+    - title: Tag: Linux
+      url: /tag_linux.html
+      output: web
+    - title: Tag: Windows
+      url: /tag_winedows.html
+      output: web
+    - title: CentOS 7 Install Guide
       url: /cos7inst.html
+      output: web
+    - title: CentOS 7 on Raspberry PI3
+      url: /cos7instpi.html
+      output: web
+
+  - title: programming
+    output: web
+    folderitems:
+    - title: Tag: Programming
+      url: /tag_programming.html
       output: web
 
   - title: Security
     output: web
     folderitems:
+    - title: Tag: Security
+      url: /tag_security.html
+      output: web
     - title: Google Authenticator
       url: /2factorcos7.html
       output: web
     - title: SoftEther 4 Install
       url: /se4instcos7.html
+      output: web
+
+  - title: Storage
+    output: web
+    folderitems:
+    - title: Tag: Storage
+      url: /tag_storage.html
+      output: web
+
+  - title: System Administration
+    output: web
+    folderitems:
+    - title: Tag: SysAdmin
+      url: /tag_sysadmin.html
+      output: web
+
+  - title: Virtualization
+    output: web
+    folderitems:
+    - title: Tag: Virtualization
+      url: /tag_virtualization
+      output: web
+
+  - title: Miscellaneous
+    output: web
+    folderitems:
+    - title: Tag: Miscellaneous
+      url: /tag_misc.html
       output: web
