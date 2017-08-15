@@ -1,0 +1,53 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Title
+  product: Google Authenticator
+  version: 1.0
+  folders:
+
+  - title: Table of Contents
+    output: web
+    folderitems:
+
+    - title: Objective
+      url: /2factorcos7.html#objective
+      output: web
+
+    - title: Prerequisites
+      url: /2factorcos7.html#prerequisites
+      output: web
+
+    - title: Architecture overview
+      url: /2factorcos7.html#architecture-overview
+      output: web
+
+    - title: FreeRADIUS components
+      url: /2factorcos7.html#freeradius-components
+      output: web
+
+    - title: Firewall Requirements
+      url: /2factorcos7.html#firewall-requirements
+      output: web
+
+    - title: Installation Overview
+      url: /2factorcos7.html#installation-overview
+      output: web
+
+
+      subfolders:
+      - title: FreeRADIUS
+        output: web
+        subfolderitems:
+
+        - title: Install FreeRADIUS
+          url: /2factorcos7.html#install-freeradius
+          output: web
+
+        - title: Configure FreeRADIUS
+          url: /2factorcos7.html#configure-freeradius
+          output: web
+
+        - title: Test FreeRADIUS
+          url: /2factorcos7.html#test-freeradius-with-an-unix-account
+          output: web
