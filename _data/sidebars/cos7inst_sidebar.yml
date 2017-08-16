@@ -1,0 +1,151 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Title
+  product: CentOS 7 Installation Guide
+  version:
+  folders:
+
+  - title: Table of Contents
+    output: web
+    folderitems:
+
+    - title: Top
+      url: /cos7inst.html
+      output: web
+
+    - title: Obtain Media
+      url: /cos7inst.html#obtain-media
+      output: web
+
+    - title: Install
+      url: /cos7inst.html#install
+      output: web
+
+    - title: Host Name
+      url: /cos7inst.html#host-name
+      output: web
+
+      subfolders:
+      - title: Network
+        output: web
+        subfolderitems:
+
+        - title: Network Manager
+          url: /cos7inst.html#network-manager
+          output: web
+
+        - title: Removing Network Manager
+          url: /cos7inst.html#removing-network-manager
+          output: web
+
+        - title: ifcfg Files
+          url: /cos7inst.html#hand-crafting-ifcfg-files
+          output: web
+
+        - title: Disable IPv6
+          url: /cos7inst.html#disable-ipv6
+          output: web
+
+        - title: nozeroconf
+          url: /cos7inst.html#nozeroconf
+          output: web
+
+        - title: Name Resolution
+          url: /cos7inst.html#name-resolution
+          output: web
+
+        - title: Network Testing
+          url: /cos7inst.html#network-testing
+          output: web
+
+      subfolders:
+      - title: Firewall & iptables
+        output: web
+        subfolderitems:
+
+        - title: Remove firewalld
+          url: /cos7inst.html#remove-firewalld
+          output: web
+
+        - title: Install iptables
+          url: /cos7inst.html#install-iptables-services
+          output: web
+
+    - title: Firewall Policies
+      url: /cos7inst.html#firewall-policies
+      output: web
+
+    - title: SELinux
+      url: /cos7inst.html#selinux
+      output: web
+
+    - title: Time Zone
+      url: /cos7inst.html#time-zone
+      output: web
+
+    - title: Time & Date
+      url: /cos7inst.html#time--date
+      output: web
+
+    - title: Network Time
+      url: /cos7inst.html#network-time
+      output: web
+
+    - title: EPEL (optional)
+      url: /cos7inst.html#epel-optional
+      output: web
+
+      subfolders:
+      - title: oVirt 4 Guest (optional)
+        output: web
+        subfolderitems:
+
+        - title: oVirt Repository
+          url: /cos7inst.html#ovirt-repository
+          output: web
+
+        - title: oVirt Guest
+          url: /cos7inst.html#ovirt-guest
+          output: web
+
+    - title: CloudInit (optional)
+      url: /cos7inst.html#cloudinit-optional
+      output: web
+
+      subfolders:
+      - title: Spacewalk 2.6 (optional)
+        output: web
+        subfolderitems:
+
+        - title: Spacewalk Repository
+          url: /cos7inst.html#spacewalk-client-repository
+          output: web
+
+        - title: Spacewalk Packages
+          url: /cos7inst.html#spacewalk-client-packages
+          output: web
+
+    - title: Update
+      url: /cos7inst.html#update
+      output: web
+
+    - title: VM Template
+      url: /cos7inst.html#vm-template
+      output: web
+
+    - title: Done?
+      url: /cos7inst.html#done
+      output: web
+
+    - title: Disable Postfix
+      url: /cos7inst.html#disable-postfix
+      output: web
+
+    - title: Additional Packages
+      url: /cos7inst.html#additional-packages
+      output: web
+
+    - title: Comments
+      url: /cos7inst.html#comments-1
+      output: web
