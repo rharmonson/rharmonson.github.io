@@ -1,22 +1,20 @@
 ---
-title: Two Factor Authentication using Google Authenticator on CentOS 7
+title: Two-factor Authentication using Google Authenticator on CentOS 7
 published: true
 tags: [linux, centos, service, sysadmin, security]
 keywords: authentication radius sssd
 last_updated: July 1, 2016
-summary: "The purpose of this article is to article is to provide a *free* two-factor authentication solution for use with VPN solutions."
-sidebar: test2_sidebar
+summary: "Build a *free* two-factor authentication solution using FreeRADIUS 3, SSSD 1.12, and Google Authenticator."
+sidebar: 2factorcos7_sidebar
 permalink: 2factorcos7.html
 folder: 2017
-toc:
+toc: false
 commentIssueId: 6
 ---
 
-# CentOS 7 Minimal: Two-factor Authentication using FreeRADIUS 3, SSSD 1.12, & Google Authenticator
-
 ## Objective
 
-The primary objective of this article is to provide a *free* two-factor authentication solution for use with VPN solutions.
+The primary objective of this article is to provide a *free* two-factor authentication solution for use with VPN solutions. The solution integrates FreeRADIUS 3, SSSD 1.12, and Google Authenticator.
 
 ## Prerequisites
 

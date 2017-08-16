@@ -1,0 +1,135 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Title
+  product: Two-factor Authentication
+  version:
+  folders:
+
+  - title: Table of Contents
+    output: web
+    folderitems:
+
+    - title: Top
+      url: /2factorcos7.html
+      output: web
+
+    - title: Objective
+      url: /2factorcos7.html#objective
+      output: web
+
+    - title: Prerequisites
+      url: /2factorcos7.html#prerequisites
+      output: web
+
+    - title: Architecture overview
+      url: /2factorcos7.html#architecture-overview
+      output: web
+
+    - title: FreeRADIUS components
+      url: /2factorcos7.html#freeradius-components
+      output: web
+
+    - title: Firewall Requirements
+      url: /2factorcos7.html#firewall-requirements
+      output: web
+
+    - title: Installation Overview
+      url: /2factorcos7.html#installation-overview
+      output: web
+
+
+      subfolders:
+      - title: FreeRADIUS
+        output: web
+        subfolderitems:
+
+        - title: Install FreeRADIUS
+          url: /2factorcos7.html#install-freeradius
+          output: web
+
+        - title: Configure FreeRADIUS
+          url: /2factorcos7.html#configure-freeradius
+          output: web
+
+        - title: Test FreeRADIUS
+          url: /2factorcos7.html#test-freeradius-with-an-unix-account
+          output: web
+
+      subfolders:
+      - title: SSSD
+        output: web
+        subfolderitems:
+
+        - title: Install SSSD
+          url: /2factorcos7.html#install-sssd
+          output: web
+
+        - title: Test SSSD
+          url: /2factorcos7.html#test-sssd
+          output: web
+
+        - title: Test FreeRADIUS & SSSD
+          url: /2factorcos7.html#test-freeradius-with-a-sssd-account
+          output: web
+
+      subfolders:
+      - title: Google Authenticator
+        output: web
+        subfolderitems:
+
+        - title: Install Compile Requirements
+          url: /2factorcos7.html#install-compile-requirements
+          output: web
+
+        - title: Obtain Source
+          url: /2factorcos7.html#obtain-source
+          output: web
+
+        - title: Build Binaries
+          url: /2factorcos7.html#build-binaries
+          output: web
+
+        - title: Install Binaries
+          url: /2factorcos7.html#install-binaries
+          output: web
+
+        - title: Setup User
+          url: setup-user
+          output: web
+
+    - title: PAM
+      url: /2factorcos7.html#pam
+      output: web
+
+    - title: SELinux
+      url: /2factorcos7.html#selinux--permissive
+      output: web
+
+    - title: Test FreeRADIUS, SSSD, & Google
+      url: /2factorcos7.html#test-freeradius-with-sssd--google-authenticator
+      output: web
+
+    - title: Firewall
+      url: /2factorcos7.html#firewall
+      output: web
+
+    - title: Install Google Auth App
+      url: /2factorcos7.html#install-google-authenticator-app
+      output: web
+
+    - title: Test FreeRADIUS & NAS
+      url: /2factorcos7.html#test-freeradius-with-nas
+      output: web
+
+    - title: Done?
+      url: https://rharmonson.github.io/2factorcos7.html#done
+      output: web
+
+    - title: Tidy Up!
+      url: https://rharmonson.github.io/2factorcos7.html#tidy-up
+      output: web
+
+    - title: Comments
+      url: https://rharmonson.github.io/2factorcos7.html#comments-1
+      output: web
