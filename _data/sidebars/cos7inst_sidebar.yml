@@ -10,7 +10,7 @@ entries:
     output: web
     folderitems:
 
-    - title: Top
+    - title: CentOS 7 Installation Guide
       url: /cos7inst.html
       output: web
 

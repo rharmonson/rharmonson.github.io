@@ -1,0 +1,101 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Title
+  product: CentOS 7 on PI 3 Guide
+  version:
+  folders:
+
+  - title: Table of Contents
+    output: web
+    folderitems:
+
+    - title: CentOS 7 Installation Guide
+      url: /cos7instpi.html
+      output: web
+
+    - title: Purpose
+      url: /cos7instpi.html#purpose
+      output: web
+
+    - title: Raspberry PI 3
+      url: /cos7instpi.html#raspberry-pi-3
+      output: web
+
+      subfolders:
+      - title: Install CentOS 7
+        output: web
+        subfolderitems:
+
+        - title: General Information
+          url: /cos7instpi.html#general-information
+          output: web
+
+        - title: Media
+          url: /cos7instpi.html#media
+          output: web
+
+        - title: Create
+          url: /cos7instpi.html#create
+          output: web
+
+    - title: README
+      url: /cos7instpi.html#readme
+      output: web
+
+    - title: Manual Expand RootFS
+      url: /cos7instpi.html#manual-expand-rootfs
+      output: web
+
+      subfolders:
+      - title: Services
+        output: web
+        subfolderitems:
+
+        - title: network.service
+          url: /cos7instpi.html#networkservice
+          output: web
+
+        - title: kdump.service
+          url: /cos7instpi.html#kdumpservice
+          output: web
+
+        - title: systemd-tmpfiles-setup.service
+          url: /cos7instpi.html#systemd-tmpfiles-setupservice
+          output: web
+
+        - title: Disable Wifi & BT
+          url: /cos7instpi.html#disable-wifibt
+          output: web
+
+    - title: NetworkManager & firewalld
+      url: /cos7instpi.html#networkmanager--firewalld
+      output: web
+
+    - title: Network Interface
+      url: /cos7instpi.html#network-interface
+      output: web
+
+    - title: Name Resolution
+      url: /cos7instpi.html#name-resolution
+      output: web
+
+    - title: Host Name
+      url: /cos7instpi.html#host-name
+      output: web
+
+    - title: Time & Date
+      url: /cos7instpi.html#time--date
+      output: web
+
+    - title: yum
+      url: /cos7instpi.html#yum
+      output: web
+
+    - title: Done?
+      url: /cos7instpi.html#done
+      output: web
+
+    - title: Comments
+      url: /cos7instpi.html#comments-1
+      output: web

@@ -10,7 +10,7 @@ entries:
     output: web
     folderitems:
 
-    - title: Top
+    - title: Two-factor Authentication
       url: /2factorcos7.html
       output: web
 
