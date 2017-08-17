@@ -5,14 +5,12 @@ tags: [linux, centos, security, service, sysadmin]
 keywords: linux centos system administration remote access vpn softether
 last_updated: September 14, 2016
 summary: "The purpose of this article is to describe how to SoftEther VPN Server and Client on CentOS 7."
-sidebar:
+sidebar: se4instcos7_sidebar
 permalink: se4instcos7.html
 folder: 2017
-toc: 
+toc: false
 commentIssueId: 5
 ---
-
-# SoftEther 4 Installation Guide on CentOS 7
 
 This article provides instructions to implement SoftEther VPN Server and Client on CentOS 7.2.1511 and Fedora 24, respectively. SoftEther VPN is an open source VPN solution that can be used for secure client remote access VPN or branch offices site to site VPN. It supports most portable devices and operating systems as well as emulating several other VPN standards such as Cisco IPSEC and OpenVPN.
 

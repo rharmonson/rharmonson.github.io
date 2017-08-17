@@ -123,13 +123,13 @@ entries:
       output: web
 
     - title: Done?
-      url: https://rharmonson.github.io/2factorcos7.html#done
+      url: /2factorcos7.html#done
       output: web
 
     - title: Tidy Up!
-      url: https://rharmonson.github.io/2factorcos7.html#tidy-up
+      url: /2factorcos7.html#tidy-up
       output: web
 
     - title: Comments
-      url: https://rharmonson.github.io/2factorcos7.html#comments-1
+      url: /2factorcos7.html#comments-1
       output: web
