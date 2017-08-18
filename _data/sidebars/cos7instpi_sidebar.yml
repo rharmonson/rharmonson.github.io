@@ -1,8 +1,8 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
-- title: Title
-  product: CentOS 7 on PI 3 Guide
+- title: Sidebar
+  product:
   version:
   folders:
 

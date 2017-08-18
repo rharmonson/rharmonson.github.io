@@ -5,8 +5,8 @@ tags: [linux, centos, security, service, sysadmin]
 keywords: linux centos system administration remote access vpn softether
 last_updated: September 14, 2016
 summary: "The purpose of this article is to describe how to SoftEther VPN Server and Client on CentOS 7."
-sidebar: se4instcos7_sidebar
-permalink: se4instcos7.html
+sidebar: se4cos7_sidebar
+permalink: se4cos7.html
 folder: 2017
 toc: false
 commentIssueId: 5

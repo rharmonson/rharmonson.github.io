@@ -1,8 +1,8 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
-- title: Title
-  product: SoftEther 4 Install Guide
+- title: Sidebar
+  product:
   version:
   folders:
 
@@ -11,7 +11,7 @@ entries:
     folderitems:
 
     - title: SoftEther 4 Install Guide
-      url: /se4instcos7.html
+      url: /se4cos7.html
       output: web
 
     - title: CentOS 7 Install

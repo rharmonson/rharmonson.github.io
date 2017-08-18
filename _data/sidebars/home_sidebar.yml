@@ -2,92 +2,91 @@
 
 entries:
 - title: Sidebar
+  product:
+  version:
   levels: one
   folders:
 
-  - title: News
+  - title: Navigation
     output: web
     folderitems:
+
+    - title: Home
+      url: /index.html
+      output: web
+
     - title: News
       url: /news.html
       output: web
+
     - title: Archive News
       url: /news_archive.html
-      output: web
-
-  - title: Hardware
-    output: web
-    folderitems:
-    - title: Raspberry PI 3 & CentOS 7
-      url: /cos7instpi.html
-      output: web
-    - title: Posts with tag Hardware
-      url: /tag_hardware.html
       output: web
 
   - title: Operating System
     output: web
     folderitems:
+
     - title: CentOS 7 Installation Guide
       url: /cos7inst.html
       output: web
-    - title: Posts with tag CentOS
-      url: /tag_centos.html
-      output: web
-    - title: Posts with tag Fedora
-      url: /tag_fedora.html
-      output: web
-    - title: Posts with tag Linux
-      url: /tag_linux.html
-      output: web
-    - title: Posts with tag Windows
-      url: /tag_winedows.html
-      output: web
 
-  - title: Programming
-    output: web
-    folderitems:
-    - title: Posts with tag Programming
-      url: /tag_programming.html
+    - title: CentOS 7 on Raspberry PI 3
+      url: /cos7instpi.html
       output: web
 
   - title: Security
     output: web
     folderitems:
+
     - title: Google Authenticator
       url: /2factorcos7.html
       output: web
-    - title: SoftEther 4 Install
-      url: /se4instcos7.html
+
+    - title: SoftEther 4 VPN
+      url: /se4cos7.html
       output: web
+
+  - title: Tag archives
+    output: web
+    folderitems:
+
+    - title: Posts with tag CentOS
+      url: /tag_centos.html
+      output: web
+
+    - title: Posts with tag Fedora
+      url: /tag_fedora.html
+      output: web
+
+    - title: Posts with tag Hardware
+      url: /tag_hardware.html
+      output: web
+
+    - title: Posts with tag Linux
+      url: /tag_linux.html
+      output: web
+
+    - title: Posts with tag Miscellaneous
+      url: /tag_misc.html
+      output: web
+
+    - title: Posts with tag Programming
+      url: /tag_programming.html
+      output: web
+
     - title: Posts with tag Security
       url: /tag_security.html
       output: web
 
-  - title: Storage
-    output: web
-    folderitems:
     - title: Posts with tag Storage
       url: /tag_storage.html
       output: web
 
-  - title: System Administration
-    output: web
-    folderitems:
     - title: Posts with tag SysAdmin
       url: /tag_sysadmin.html
       output: web
 
-  - title: Virtualization
-    output: web
-    folderitems:
     - title: Posts with tag Virtualization
       url: /tag_virtualization
-      output: web
-
-  - title: Miscellaneous
-    output: web
-    folderitems:
-    - title: Posts with tag Miscellaneous
-      url: /tag_misc.html
       output: web
