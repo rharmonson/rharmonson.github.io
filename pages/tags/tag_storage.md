@@ -2,7 +2,7 @@
 title: "Storage pages"
 tagName: storage
 search: exclude
-permalink: tag_storage:.html
+permalink: tag_storage.html
 sidebar:
 folder: tags
 toc: false
