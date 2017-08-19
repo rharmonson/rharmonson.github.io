@@ -7,7 +7,7 @@ last_updated: July 1, 2016
 summary: "Build a *free* two-factor authentication solution using FreeRADIUS 3, SSSD 1.12, and Google Authenticator."
 sidebar: 2factorcos7_sidebar
 permalink: 2factorcos7.html
-folder: 2017
+folder: /pages/2017
 toc: false
 commentIssueId: 6
 ---
