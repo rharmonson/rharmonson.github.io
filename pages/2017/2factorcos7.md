@@ -4,7 +4,7 @@ published: true
 tags: [linux, centos, service, sysadmin, security]
 keywords: authentication radius sssd
 last_updated: July 1, 2016
-summary: "Build a *free* two-factor authentication solution using FreeRADIUS 3, SSSD 1.12, and Google Authenticator."
+summary: "Build a *free* two-factor authentication solution using FreeRADIUS 3, SSSD 1.12, and Google Authenticator that."
 sidebar: 2factorcos7_sidebar
 permalink: 2factorcos7.html
 folder: /pages/2017
