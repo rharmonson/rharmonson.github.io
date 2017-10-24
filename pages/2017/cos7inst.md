@@ -263,7 +263,6 @@ Results
 # To override those settings, enter new settings here, or in an /etc/sysctl.d/<name>.conf file
 #
 # For more information, see sysctl.conf(5) and sysctl.d(5).
-net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.eth0.disable_ipv6=1
 ```
 
@@ -271,7 +270,6 @@ At this point, you can reboot or use `sysctl` to load /etc/sysctl.conf.
 
 ```
 [root@myhost~]# sysctl --load=/etc/sysctl.conf
-net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.eth0.disable_ipv6 = 1
 ```
 
@@ -300,12 +298,18 @@ net.ipv6.conf.default.disable_ipv6=1"
 %}
 
 ```
-[root@myhost ~]# vi /etc/sysctl.conf```
+[root@myhost ~]# vi /etc/sysctl.conf
 # System default settings live in /usr/lib/sysctl.d/00-system.conf.
 # To override those settings, enter new settings here, or in an /etc/sysctl.d/<name>.conf file
 #
 # For more information, see sysctl.conf(5) and sysctl.d(5).
 
+```
+
+You can enable IPv6 for a specific interface by adding it to sysctl.conf with a value of 0 to override the "all" and "default." For example, to enable the IPv6 loopback interface or `::1`:
+
+```
+net.ipv6.conf.lo.disable_ipv6 = 0
 ```
 
 ### NOZEROCONF
