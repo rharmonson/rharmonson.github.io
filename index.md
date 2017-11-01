@@ -7,10 +7,6 @@ toc: false
 commentIssueId: 1
 ---
 
-## Under Construction!
-
-`I am in the process of migrating and revising content from RichTech Wiki and developing new content and tweaking the website to my liking. Please check back!`
-
 ## Welcome!
 
 Welcome to RichTech Security & Technology Guides. The website primarily consists of articles describing the installation and configuration of open source solutions including:
