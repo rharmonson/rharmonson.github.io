@@ -18,112 +18,60 @@ entries:
       url: /2factorcos7.html#objective
       output: web
 
-    - title: Prerequisites
-      url: /2factorcos7.html#prerequisites
-      output: web
-
     - title: Architecture overview
       url: /2factorcos7.html#architecture-overview
       output: web
 
-    - title: FreeRADIUS components
-      url: /2factorcos7.html#freeradius-components
+    - title: Solution Components
+      url: /2factorcos7.html#solution-components
       output: web
 
-    - title: Firewall Requirements
-      url: /2factorcos7.html#firewall-requirements
+    - title: Firewall Ports
+      url: /2factorcos7.html#firewall-ports
       output: web
 
     - title: Installation Overview
       url: /2factorcos7.html#installation-overview
       output: web
 
+    - title: Prerequisites
+      url: /2factorcos7.html#prerequisites
+      output: web
 
-      subfolders:
-      - title: FreeRADIUS
-        output: web
-        subfolderitems:
+    - title: FreeRADIUS
+      url: /2factorcos7.html#freeradius
+      output: web
 
-        - title: Install FreeRADIUS
-          url: /2factorcos7.html#install-freeradius
-          output: web
+    - title: SSSD
+      url: /2factorcos7.html#sssd-ipa-or-ad
+      output: web
 
-        - title: Configure FreeRADIUS
-          url: /2factorcos7.html#configure-freeradius
-          output: web
-
-        - title: Test FreeRADIUS
-          url: /2factorcos7.html#test-freeradius-with-an-unix-account
-          output: web
-
-      subfolders:
-      - title: SSSD
-        output: web
-        subfolderitems:
-
-        - title: Install SSSD
-          url: /2factorcos7.html#install-sssd
-          output: web
-
-        - title: Test SSSD
-          url: /2factorcos7.html#test-sssd
-          output: web
-
-        - title: Test FreeRADIUS & SSSD
-          url: /2factorcos7.html#test-freeradius-with-a-sssd-account
-          output: web
-
-      subfolders:
-      - title: Google Authenticator
-        output: web
-        subfolderitems:
-
-        - title: Install Compile Requirements
-          url: /2factorcos7.html#install-compile-requirements
-          output: web
-
-        - title: Obtain Source
-          url: /2factorcos7.html#obtain-source
-          output: web
-
-        - title: Build Binaries
-          url: /2factorcos7.html#build-binaries
-          output: web
-
-        - title: Install Binaries
-          url: /2factorcos7.html#install-binaries
-          output: web
-
-        - title: Setup User
-          url: setup-user
-          output: web
+    - title: Google Authenticator
+      url: /2factorcos7.html#google-authenticator
+      output: web
 
     - title: PAM
       url: /2factorcos7.html#pam
       output: web
 
-    - title: SELinux
-      url: /2factorcos7.html#selinux--permissive
-      output: web
-
-    - title: Test FreeRADIUS, SSSD, & Google
+    - title: Test FreeRADIUS with SSSD & Google
       url: /2factorcos7.html#test-freeradius-with-sssd--google-authenticator
       output: web
 
-    - title: Firewall
-      url: /2factorcos7.html#firewall
+    - title: Test Google Authenticator App
+      url: /2factorcos7.html#test-google-authenticator-app
       output: web
 
-    - title: Install Google Auth App
-      url: /2factorcos7.html#install-google-authenticator-app
+    - title: radiusd Enable
+      url: /2factorcos7.html#radiusd-enable
       output: web
 
-    - title: Test FreeRADIUS & NAS
-      url: /2factorcos7.html#test-freeradius-with-nas
+    - title: Network Access Server
+      url: /2factorcos7.html#network-access-server
       output: web
 
-    - title: Done?
-      url: /2factorcos7.html#done
+    - title: Log-in process
+      url: /2factorcos7.html#log-in-process
       output: web
 
     - title: Tidy Up!
