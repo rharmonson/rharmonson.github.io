@@ -1,6 +1,6 @@
 ---
 title: Richard's Technology Guides
-keywords: home homepage index
+keywords: home, homepage, index
 sidebar: home_sidebar
 permalink: index.html
 toc: false
