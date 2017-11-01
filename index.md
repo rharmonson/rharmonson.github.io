@@ -1,5 +1,5 @@
 ---
-title: Richard's Technology Guides
+title: RichTech Security & Technology Guides
 keywords: home, homepage, index
 sidebar: home_sidebar
 permalink: index.html
@@ -13,9 +13,7 @@ commentIssueId: 1
 
 ## Welcome!
 
-Welcome to Richard's Technology (RichTech) Guides. The website primarily consists of installation guides and news posts on open source operating systems and software.
-
-Topics include:
+Welcome to RichTech Security & Technology Guides. The website primarily consists of articles describing the installation and configuration of open source solutions including:
 
 - Computer Hardware
 - Linux: CentOS & Fedora

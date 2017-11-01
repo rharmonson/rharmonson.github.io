@@ -2,7 +2,7 @@
 title: CentOS 7 Installation Guide
 published: true
 tags: [linux, centos, sysadmin, virtualization]
-keywords: firewalld NetworkManager iptables cloud-init spacewalk ovirt epel
+keywords: firewalld, NetworkManager, iptables, cloud-init, spacewalk, ovirt epel
 last_updated: July 30, 2017
 summary: "The purpose of this guide is provide the steps to install and configure a standardized CentOS 7.3.1611 (aka RHEL) x86_64 base operating system."
 sidebar: cos7inst_sidebar
