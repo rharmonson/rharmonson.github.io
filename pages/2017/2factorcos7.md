@@ -1,5 +1,5 @@
 ---
-title: Two Factor Authentication using FreeRADIUS with SSSD (FreeIPA or Active Directory) and Google Authenticator on CentOS 7
+title: Two Factor Authentication using FreeRADIUS with SSSD and Google Authenticator on CentOS 7
 published: true
 tags: [linux, centos, service, sysadmin, security]
 keywords: authentication, freeradius, radius, sssd, freeipa,

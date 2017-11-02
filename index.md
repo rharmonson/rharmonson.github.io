@@ -1,6 +1,6 @@
 ---
 title: RichTech Security & Technology Guides
-keywords: home, homepage, index
+keywords: home, homepage
 sidebar: home_sidebar
 permalink: index.html
 toc: false
