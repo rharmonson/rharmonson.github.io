@@ -14,15 +14,15 @@ commentIssueId: 3
 
 The purpose of this guide is provide the steps to install and configure a standardized CentOS 7 (aka RHEL) x86_64 base operating system. In addition, there are several optional sections to prepare the build for use with virtualization platforms.
 
-Current CentOS-7 Release Notes can be found at https://wiki.centos.org/Manuals/ReleaseNotes/CentOS7.
+Current CentOS-7 Release Notes can be found at [CentOS-7 (1708) Release notes](https://wiki.centos.org/Manuals/ReleaseNotes/CentOS7).
 
-CentOS FAQ can be found at http://wiki.centos.org/FAQ/CentOS7.
+CentOS FAQ can be found at [Questions about CentOS-7](http://wiki.centos.org/FAQ/CentOS7).
 
 ## Obtain Media
 
 If you are new to Linux or new to CentOS minimal installations, I would advise reviewing all the information at the URL below. For this article, I am using x86_64 version, also, known as 64 bit.
 
-Download: http://wiki.centos.org/Download
+* [Download CentOS Linux ISO Images](http://wiki.centos.org/Download)
 
 Select the media of your choice to download.
 
@@ -32,7 +32,7 @@ The NetInstall ISO installer has only the necessary bits to boot a very basic op
 
 In addition, the NetInstall needs an enabled network interface prior to providing a repository URL. Generally, pick a mirror repository that is closest to your geographic location. The list of mirrors is found here:
 
-* https://www.centos.org/download/mirrors
+* [List of CentOS Mirrors](https://www.centos.org/download/mirrors)
 
 I, typically, use ftp due to its efficiency over http, but if privacy is a concern use https. The entered URL should look similar to:
 
@@ -44,17 +44,9 @@ Boot from media and, generally, accept the defaults. You have an opportunity to 
 
 Two items to consider disabling at install are:
 
-* KDUMP
-
-Reference: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/sect-kdump-ppc
-
-* Security Policy
-
-References:
-
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/sect-security-policy-x86
-
-https://scap.nist.gov/index.html
+* [KDUMP](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/sect-kdump-ppc)
+* [Red Hat Security Policy](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/sect-security-policy-x86)
+* [SCAP Home](https://scap.nist.gov/index.html)
 
 The use of SCAP profiles can significantly improve the security stance of a host, thus an organization. Advise researching prior to using SCAP.
 
@@ -259,17 +251,7 @@ NETMASK=255.255.255.0
 GATEWAY=192.168.2.254
 ```
 
-If using bonds, bridges, or teams, details can be found here:
-
-```
-https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Networking_Guide/index.html
-```
-
-Reference
-
-```
-https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-Network_Interfaces.html#s1-networkscripts-files
-```
+If using bonds, bridges, or teams, details can be found on Red Hat's [Networking Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Networking_Guide/index.html).
 
 ### Disable IPv6
 
@@ -373,9 +355,7 @@ Does anyone use Zero Configuration Networking? I do not! Add the following line 
 NOZEROCONF=yes
 ```
 
-What is Zeroconf?
-
-* http://www.zeroconf.org/
+Read more about [Zeroconf](http://www.zeroconf.org/).
 
 ### Name Resolution
 
@@ -481,7 +461,7 @@ Created symlink from /etc/systemd/system/basic.target.wants/ip6tables.service to
 
 ## Firewall Policies
 
-There are two sets of files for iptables and ip6tables that set policy and configuration found in `/etc/sysconfig`. The file are:
+There are two sets of files for iptables and ip6tables that set policy and configuration found in `/etc/sysconfig`. The files are:
 
 1. iptables
 1. ip6tables
@@ -572,7 +552,7 @@ Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
  pkts bytes target     prot opt in     out     source               destination
 ```
 
-In reviewing the firewall policies, we are permitting established connections, incoming IPv4 SSH connections, incoming IPv4 ICMP, IPv6 DHCP, then rejecting AND communicating anything not explicitly permitted using icmp-host-prohibited. If you are satisfied with the defaults, skip to the next section. Otherwise, backup the existing policies.
+In reviewing the firewall policies, we are permitting established connections, incoming IPv4 and IPv6 SSH connections, incoming IPv4 ICMP, IPv6 DHCP, then rejecting AND communicating anything not explicitly permitted using icmp-host-prohibited. If you are satisfied with the defaults, skip to the next section. Otherwise, backup the existing policies.
 
 ```
 [root@myhost sysconfig]# cd ~
@@ -755,8 +735,6 @@ NTP synchronized: yes
                   Sun 2017-11-05 01:00:00 PST
 ```
 
-References http://www.server-world.info/en/note?os=CentOS_7&p=timezone
-
 ## Time & Date
 
 Set the current local time and date using `timedatectl`.
@@ -879,7 +857,7 @@ Is this ok [y/d/N]:
 
 ## oVirt 4 Guest (optional)
 
-If using CentOS 7 as an oVirt Guest (virtual machine), install your version of the oVirt repository and guest agent. I am using oVirt 4.0.
+oVirt is a blend of "Open" and "Virtualization" and is the upstream project for Red Hat Enterprise Virtualization (RHEV). If using CentOS 7 as an oVirt Guest (virtual machine), install your version of the oVirt repository and guest agent. I am using oVirt 4.1.
 
 ### oVirt Repository
 
@@ -938,7 +916,7 @@ The ovirt-guest-agent.server will start on next boot or `systemctl start ovirt-g
 
 ## CloudInit (optional)
 
-CloudInit handles early initialization of virtual machines. I use the cloud-init service with oVirt to configure network settings, passwords, and other settings when initializing from virtual machines templates.
+CloudInit handles early initialization of virtual machines. I use the cloud-init service with oVirt Engine to configure network settings, passwords, and other settings when initializing from virtual machines templates.
 
 {% include warning.html content="
 CentOS 7.4.1708 at release the cloud-init 0.7.9 is *broken*. I have seen number of different bug reports and solutions but no working package has been release as of November 5, 2017. If you have an existing installation using cloud-init 0.7.5 from CentOS 7.3 use the yum-plugin-versionlock to lock the version. Version 0.7.5 appears to be working without issue on 7.4."
@@ -995,13 +973,11 @@ Is this ok [y/d/N]:
 
 The cloud-init.server will start on next boot or `systemctl start cloud-init.service`.
 
-Reference
+Reference: [Using Cloud-Init to automate the configuration of VMs](https://access.redhat.com/documentation/en-us/red_hat_virtualization/4.0/html/virtual_machine_management_guide/sect-using_cloud-init_to_automate_the_configuration_of_virtual_machines)
 
-* https://access.redhat.com/documentation/en-us/red_hat_virtualization/4.0/html/virtual_machine_management_guide/sect-using_cloud-init_to_automate_the_configuration_of_virtual_machines
+## Spacewalk Client (optional)
 
-## Spacewalk 2.7 Client (optional)
-
-Spacewalk is the upstream project for Satellite 5 aka Satellite Classic. I use it for patch and configuration management and a guide to build the Spacewalk 2.6 Server can be found at [Spacewalk 2.6](https://github.com/rharmonson/richtech/wiki/OSVDC-Series:-Configuration-and-Patch-Management-with-Spacewalk-2.6-on-CentOS-7.3.1611-Minimal).
+Spacewalk is the upstream project for Satellite 5 aka Satellite Classic. I use it for patch and configuration management and my guide to build the Spacewalk 2.6 Server can be found at [Spacewalk 2.6](https://github.com/rharmonson/richtech/wiki/OSVDC-Series:-Configuration-and-Patch-Management-with-Spacewalk-2.6-on-CentOS-7.3.1611-Minimal).
 
 ### Spacewalk Client Repository
 
@@ -1069,10 +1045,7 @@ Installed size: 7.5 M
 Is this ok [y/d/N]:
 ```
 
-To use Spacewalk, the host must be registered and additional functionality will require additional packages and configuration. Details on the steps to complete a Spacewalk client setup are found at the URL below.
-
-
-* https://github.com/rharmonson/richtech/wiki/OSVDC-Series:-Configuration-and-Patch-Management-with-Spacewalk-2.6-on-CentOS-7.3.1611-Minimal#spacewalk-client
+To use Spacewalk, the host must be registered and additional functionality will require additional packages and configuration. Details on the steps to complete a Spacewalk client setup are found at the client section in my [Configuration and Patch Management Guide](https://github.com/rharmonson/richtech/wiki/OSVDC-Series:-Configuration-and-Patch-Management-with-Spacewalk-2.6-on-CentOS-7.3.1611-Minimal#spacewalk-client).
 
 ## FreeIPA Client (optional)
 
@@ -1209,7 +1182,7 @@ Update the host.
 
 ## VM Template
 
-If using the Linux host created using the instructions above as a virtual machine (VM) template, I use the following process to prepare the VM.
+If using the CentOS host created using the instructions above as a virtual machine (VM) template, I use the following process to prepare the VM.
 
 1. Clean yum
 1. Clear machine-id
@@ -1263,9 +1236,7 @@ rm -f /var/log/tuned/tuned.log
 sys-unconfig
 ```
 
-Reference
-
-* https://access.redhat.com/documentation/en-us/red_hat_virtualization/4.0/html/virtual_machine_management_guide/chap-templates#sect-Sealing_Virtual_Machines_in_Preparation_for_Deployment_as_Templates
+Additional details on sealing virtual machines for oVirt is found in Red Hat's [Virtual Machine Management Guide](https://access.redhat.com/documentation/en-us/red_hat_virtualization/4.1/html/virtual_machine_management_guide/chap-templates#sect-Sealing_Virtual_Machines_in_Preparation_for_Deployment_as_Templates).
 
 ## Done!?
 
