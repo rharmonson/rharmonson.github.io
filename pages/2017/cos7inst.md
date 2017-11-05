@@ -4,7 +4,7 @@ published: true
 tags: [linux, centos, sysadmin, virtualization]
 keywords: firewalld, NetworkManager, iptables, cloud-init, spacewalk, ovirt epel
 last_updated: November 4, 2017
-summary: "The purpose of this guide is provide the steps to install and configure a standardized CentOS 7 also known as Red Hat Enterprise Linux (RHEL) x86_64 base operating system for use with virtualization platforms."
+summary: "The purpose of this guide is provide the steps to install and configure a standardized CentOS 7 (7.4.1708) also known as Red Hat Enterprise Linux (RHEL) x86_64 base operating system for use with virtualization platforms."
 sidebar: cos7inst_sidebar
 permalink: cos7inst.html
 folder: 2017
