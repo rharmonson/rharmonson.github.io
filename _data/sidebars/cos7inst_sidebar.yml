@@ -95,7 +95,7 @@ entries:
       url: /cos7inst.html#cloudinit-optional
       output: web
 
-    - title: Spacewalk 2.6 (optional)
+    - title: Spacewalk (optional)
       url: /cos7inst.html#spacewalk-26-client-optional
       output: web
 
