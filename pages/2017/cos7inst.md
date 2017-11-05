@@ -786,7 +786,7 @@ NTP synchronized: yes
 ```
 
 {% include note.html content="
-When using `timedatectl set-time you may` you may receive an error `Failed to set time: Automatic time synchronization is enabled` if chronyd is in use. If the system time or date is off, the next section."
+When using `timedatectl set-time you may` you may receive an error `Failed to set time: Automatic time synchronization is enabled` if chronyd is in use. If the system time or date is off, see the next section."
 %}
 
 ### chronyd
@@ -941,7 +941,7 @@ The ovirt-guest-agent.server will start on next boot or `systemctl start ovirt-g
 CloudInit handles early initialization of virtual machines. I use the cloud-init service with oVirt to configure network settings, passwords, and other settings when initializing from virtual machines templates.
 
 {% include warning.html content="
-CentOS 7.4.1708 at release the cloud-init 0.7.9 is just *broken*. I have seen number of different bug reports, solution, etc. If you have an existing installation using cloud-init 0.7.5 from CentOS 7.3 use the yum-plugin-versionlock to lock the version. Version 0.7.5 appears to be working without issue."
+CentOS 7.4.1708 at release the cloud-init 0.7.9 is *broken*. I have seen number of different bug reports and solutions but no working package has been release as of November 5, 2017. If you have an existing installation using cloud-init 0.7.5 from CentOS 7.3 use the yum-plugin-versionlock to lock the version. Version 0.7.5 appears to be working without issue on 7.4."
 %}
 
 ```
