@@ -79,10 +79,6 @@ entries:
       url: /cos7inst.html#time--date
       output: web
 
-    - title: Network Time
-      url: /cos7inst.html#network-time
-      output: web
-
     - title: EPEL (optional)
       url: /cos7inst.html#epel-optional
       output: web
@@ -96,7 +92,7 @@ entries:
       output: web
 
     - title: Spacewalk (optional)
-      url: /cos7inst.html#spacewalk-26-client-optional
+      url: /cos7inst.html#spacewalk-client-optional
       output: web
 
     - title: FreeIPA Client (optional)
