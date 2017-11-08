@@ -642,6 +642,13 @@ Chain OUTPUT (policy DROP 0 packets, 0 bytes)
  pkts bytes target     prot opt in     out     source               destination
 ```
 
+If satisfied with the new policies, save the running firewall policies using the service command which uses iptables-save to /etc/sysconfig/iptables.
+
+```
+[root@myhost ~]# service iptables save
+[root@myhost ~]# service ip6tables save
+```
+
 To permit additional services, insert additional rules using -A under the SSH rule. For example:
 
 ```
