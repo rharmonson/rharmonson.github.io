@@ -1293,7 +1293,7 @@ I install a number of optional packages for my builds including:
 * tmux: alternative to screen
 
 ```
-[root@myhost ~]# yum -y install deltarpm yum-utils yum-versionlock yum-plugin-priorities yum-plugin-security rpmconf wget bzip2 tmux
+[root@myhost ~]# yum -y install deltarpm yum-utils yum-plugin-versionlock yum-plugin-priorities yum-plugin-security rpmconf wget bzip2 tmux
 ```
 
 Results
