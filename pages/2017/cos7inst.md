@@ -1286,14 +1286,13 @@ I install a number of optional packages for my builds including:
 * yum-utils: variety of useful utils to query yum
 * yum-versionlock: permits locking a version of packages when exclude is not an option (spacewalk)
 * yum-plugin-priorities: set repository priorities when a repository is a requirement but has a history of trashing things
-* yum-plugin-security: used to query and install only security packages
-* rpmconf: darn useful to see what configuration files were replaced after updates
+* rpmconf: from the EPEL repo and darn useful to see what configuration files were replaced after updates
 * wget: alternative to curl
 * bzip2: un/archive utility for .tar.bz2 files
 * tmux: alternative to screen
 
 ```
-[root@myhost ~]# yum -y install deltarpm yum-utils yum-plugin-versionlock yum-plugin-priorities yum-plugin-security rpmconf wget bzip2 tmux
+[root@myhost ~]# yum -y install deltarpm yum-utils yum-plugin-versionlock yum-plugin-priorities rpmconf wget bzip2 tmux
 ```
 
 Results
