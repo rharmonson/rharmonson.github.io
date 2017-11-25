@@ -192,10 +192,10 @@ Is this ok [y/d/N]:
 Enable iptables-services.
 
 ```
-[root@osh ~]# systemctl enable iptables ip6tables
+[root@centos-rpi3 ~]# systemctl enable iptables ip6tables
 Created symlink from /etc/systemd/system/basic.target.wants/iptables.service to /usr/lib/systemd/system/iptables.service.
 Created symlink from /etc/systemd/system/basic.target.wants/ip6tables.service to /usr/lib/systemd/system/ip6tables.service.
-[root@osh ~]# systemctl start iptables ip6tables
+[root@centos-rpi3 ~]# systemctl start iptables ip6tables
 ```
 
 If you reboot at this point without completing the next step, execute `dhclient` to obtain an IP address.

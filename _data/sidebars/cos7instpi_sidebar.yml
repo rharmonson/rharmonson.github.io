@@ -22,47 +22,17 @@ entries:
       url: /cos7instpi.html#raspberry-pi-3
       output: web
 
-      subfolders:
-      - title: Install CentOS 7
-        output: web
-        subfolderitems:
-
-        - title: General Information
-          url: /cos7instpi.html#general-information
-          output: web
-
-        - title: Media
-          url: /cos7instpi.html#media
-          output: web
-
-        - title: Create
-          url: /cos7instpi.html#create
-          output: web
+    - title: Install CentOS 7
+      url: /cos7instpi.html#install-centos-7
+      output: web
 
     - title: README
       url: /cos7instpi.html#readme
       output: web
 
-      subfolders:
-      - title: Services
-        output: web
-        subfolderitems:
-
-        - title: network.service
-          url: /cos7instpi.html#networkservice
-          output: web
-
-        - title: kdump.service
-          url: /cos7instpi.html#kdumpservice
-          output: web
-
-        - title: systemd-tmpfiles-setup.service
-          url: /cos7instpi.html#systemd-tmpfiles-setupservice
-          output: web
-
-        - title: Disable Wifi & BT
-          url: /cos7instpi.html#disable-wifibt
-          output: web
+    - title: Services
+      url: /cos7instpi.html#services
+      output: web
 
     - title: NetworkManager & firewalld
       url: /cos7instpi.html#networkmanager--firewalld
