@@ -41,7 +41,7 @@ PI3 Specifications
 
 ### General information
 
-https://wiki.centos.org/SpecialInterestGroup/AltArch/Arm32/RaspberryPi3
+[Raspberry PI SIG](https://wiki.centos.org/SpecialInterestGroup/AltArch/Arm32/RaspberryPi3)
 
 {% include tip.html content="Root Password<br/>
 <br/>
@@ -52,17 +52,17 @@ The default root password is <b>centos</b>."
 
 Begin, by obtaining the CentOS media from:
 
-http://mirror.centos.org/altarch/7/isos/armhfp
+[http://mirror.centos.org/altarch/7/isos/armhfp](http://mirror.centos.org/altarch/7/isos/armhfp)
 
 I will be using:
 
-http://mirror.centos.org/altarch/7/isos/armhfp/CentOS-Userland-7-armv7hl-Minimal-1708-RaspberryPi3.img.xz
+[CentOS-Userland-7-armv7hl-Minimal-1708-RaspberryPi3.img.xz](http://mirror.centos.org/altarch/7/isos/armhfp/CentOS-Userland-7-armv7hl-Minimal-1708-RaspberryPi3.img.xz)
 
 ### Create
 
-There are number of methods, and I found this website on xmodulo.com to be very good.
+There are number of methods, and I found this web page on xmodulo.com to be very good.
 
-http://xmodulo.com/write-raspberry-pi-image-sd-card.html
+[http://xmodulo.com/write-raspberry-pi-image-sd-card.html](http://xmodulo.com/write-raspberry-pi-image-sd-card.html)
 
 ## README
 
@@ -113,11 +113,15 @@ blacklist hci_uart
 
 Since I have no intention of using wireless, disable the wpa_suplicant service using `systemctl disable wpa_supplicant.service`. Using 7.4.1708 this service was not enabled.
 
-Reference: http://raspberrypi.stackexchange.com/questions/43720/disable-wifi-wlan0-on-pi-3#43721
+Reference:
+
+[Disable wifi & wlan0 on PI](http://raspberrypi.stackexchange.com/questions/43720/disable-wifi-wlan0-on-pi-3#43721)
 
 ## NetworkManager & firewalld
 
 I am not a fan of NetworkManager nor firewalld on CentOS Minimal installations, so they have to go! However, we will need `iptables-services` to manage iptables in the absence of firewalld.
+
+Disable NetworkManager & firewalld
 
 ```
 [root@centos-rpi3 ~]# systemctl stop NetworkManager firewalld
@@ -129,7 +133,11 @@ Removed symlink /etc/systemd/system/multi-user.target.wants/firewalld.service.
 Removed symlink /etc/systemd/system/multi-user.target.wants/NetworkManager.service.
 ```
 
-`[root@centos-rpi3 ~]# yum remove NetworkManager NetworkManager-libnm firewalld`
+Uninstall NetworkManager & firewalld
+
+```
+[root@centos-rpi3 ~]# yum remove NetworkManager NetworkManager-libnm firewalld
+```
 
 Results
 
@@ -229,7 +237,13 @@ Reboot or restart the network service for changes to take effect.
 
 ## Name Resolution
 
-`# vi /etc/resolv.conf`
+Update `resolv.conf`.
+
+```
+[root@centos-rpi3 ~]# vi /etc/resolv.conf
+```
+
+Results
 
 ```
 search myhost.mydomain.net
@@ -239,7 +253,7 @@ nameserver 64.6.65.6 # Verisign: Reston, Virginia
 
 ## Host Name
 
-Use hostnamectl to set host name.
+Use `hostnamectl` to set host name.
 
 ```
 [root@centos-rpi3 ~]# hostnamectl set-hostname myhost.mydomain.net
