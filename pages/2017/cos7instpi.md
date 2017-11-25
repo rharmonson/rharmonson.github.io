@@ -14,7 +14,7 @@ commentIssueId: 4
 
 ## Purpose
 
-The purpose of this article is to describe how to install CentOS 7 on the Raspberry PI 3 B for use as a starting point to install light-weight services such as DNS, NTP, DHCP, Apache, etc. This guide has been tested successfully using CentOS 7.4.1708.
+The purpose of this article is to describe how to install CentOS 7 on the Raspberry PI 3 B for use as a starting point to install light-weight services such as DNS, NTP, DHCP, Apache, etc. This guide has been tested using CentOS 7.4.1708.
 
 ## Raspberry PI 3
 
@@ -44,6 +44,7 @@ PI3 Specifications
 https://wiki.centos.org/SpecialInterestGroup/AltArch/Arm32/RaspberryPi3
 
 {% include tip.html content="Root Password<br/>
+<br/>
 The default root password is <b>centos</b>."
 %}
 
@@ -204,7 +205,9 @@ If you reboot at this point without completing the next step, execute `dhclient`
 
 I use static IP addresses for infrastructure related services. As such, we need to update ifcfg-eth0.
 
-`# vi /etc/sysconfig/network-scripts/ifcfg-eth0`
+```
+[root@centos-rpi3 ~]# vi /etc/sysconfig/network-scripts/ifcfg-eth0
+```
 
 Update to reflect your IP address topology:
 
@@ -221,7 +224,7 @@ GATEWAY=192.168.1.254
 Reboot or restart the network service for changes to take effect.
 
 ```
-# systemctl restart network
+[root@centos-rpi3 ~]# systemctl restart network
 ```
 
 ## Name Resolution
@@ -256,7 +259,7 @@ Restarting the `network` service will not suffice, so `reboot` to verify changes
 Results
 
 ```
-[root@centos-rpi3 ~]# ping -c3 www.google.com
+[root@myhost ~]# ping -c3 www.google.com
 PING www.google.com (172.217.5.100) 56(84) bytes of data.
 64 bytes from sfo03s07-in-f4.1e100.net (172.217.5.100): icmp_seq=1 ttl=51 time=26.6 ms
 64 bytes from sfo03s07-in-f4.1e100.net (172.217.5.100): icmp_seq=2 ttl=51 time=26.7 ms
@@ -272,10 +275,10 @@ rtt min/avg/max/mdev = 26.594/26.682/26.765/0.201 ms
 Use timedatectl to set time, timezone, and/or date.
 
 ```
-[root@centos-rpi3 ~]# timedatectl list-timezones | grep -i angeles
+[root@myhost ~]# timedatectl list-timezones | grep -i angeles
 America/Los_Angeles
-[root@centos-rpi3 ~]# timedatectl set-timezone America/Los_Angeles
-[root@centos-rpi3 ~]# timedatectl
+[root@myhost ~]# timedatectl set-timezone America/Los_Angeles
+[root@myhost ~]# timedatectl
       Local time: Mon 2017-11-24 19:44:45 PDT
   Universal time: Tue 2017-11-25 02:44:45 UTC
         RTC time: n/a
@@ -296,7 +299,9 @@ NTP synchronized: yes
 
 Check for yum update using `yum update yum`, then install preferred packages. For example, I install yum related packages and tmux.
 
-`yum install yum-utils deltarpm tmux`.
+```
+[root@myhost ~]# yum install yum-utils deltarpm tmux
+```
 
 Results
 
@@ -324,8 +329,8 @@ Is this ok [y/d/N]:
 Update the system. `tmux` is an alternative to `screen`. It allows reconnecting to a tmux session with ease when using SSH using `tmux attach`.
 
 ```
-[root@centos-rpi3 ~]# tmux new -s update
-[root@centos-rpi3 ~]# yum update -y && reboot
+[root@myhost ~]# tmux new -s update
+[root@myhost ~]# yum update -y && reboot
 ```
 
 ## Done!?
