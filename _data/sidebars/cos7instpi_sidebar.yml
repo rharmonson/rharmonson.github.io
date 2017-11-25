@@ -43,10 +43,6 @@ entries:
       url: /cos7instpi.html#readme
       output: web
 
-    - title: Manual Expand RootFS
-      url: /cos7instpi.html#manual-expand-rootfs
-      output: web
-
       subfolders:
       - title: Services
         output: web
