@@ -66,13 +66,31 @@ There are number of methods, and I found this web page on xmodulo.com to be very
 
 ## README
 
-There is a `/README` file that describes remaining steps to complete the Raspbery PI 3 setup including how to expand the root (/) partition to capacity of the media. Follow the instructions to expand the root filesystem using `/usr/bin/rootfs-expand`.
+There is a `/root/README` file that describes remaining steps to complete the Raspbery PI 3 setup including how to expand the root (/) partition to capacity of the media. Follow the instructions to expand the root filesystem using `/usr/bin/rootfs-expand`.
 
 ```
 == CentOS 7 userland ==
 
 If you want to automatically resize your / partition, just type the following (as root user):
 /usr/bin/rootfs-expand
+```
+
+Results
+
+```
+[root@centos-rpi3 ~]# /usr/bin/rootfs-expand
+Extending partition 3 to max size ....
+CHANGED: partition=3 start=2074624 old: size=4194304 end=6268928 new: size=60477407,end=62552031
+Resizing ext4 filesystem ...
+resize2fs 1.42.9 (28-Dec-2013)
+Filesystem at /dev/mmcblk0p3 is mounted on /; on-line resizing required
+old_desc_blocks = 1, new_desc_blocks = 4
+The filesystem on /dev/mmcblk0p3 is now 7559675 blocks long.
+
+Done.
+[root@centos-rpi3 ~]# df -h /
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        29G  765M   27G   3% /
 ```
 
 ## Services
