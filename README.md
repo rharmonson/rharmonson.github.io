@@ -1,4 +1,6 @@
-# RichTech Security & Technology Guides
+# This project is archived!
+
+## RichTech Security & Technology Guides
 
 RichTech is an abbreviation for Richard's Technology.
 
